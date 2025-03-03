@@ -1,3 +1,5 @@
+# NET577 Lab 7
+
 ### Wazuh Interface Config
 1. Open `/etc/sysconfig/network-scripts/ifcfg-eth0` for editing.
 2. Add/modify the following values:
@@ -16,7 +18,7 @@ DNS1=10.77.10.1
 <remote>
   <connection>syslog</connection>
   <port>514</port>
-  <protocol>tcp</protocol>
+  <protocol>udp</protocol>
   <allowed-ips>10.77.10.0/24</allowed-ips>
   <local_ip>10.77.10.4</local_ip>
 </remote>
